@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My Website</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#a">個人基本資訊</a></li>
+					<li><a href="#b">個人專業與技能</a></li>
+					<li><a href="#c">個人經歷</a></li>
+					<li><a href="#d">聯絡資訊</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="a">
+					<h2>個人基本資訊</h2>
+				<div class="content">
+					<div><img src="image\683579 (1).jpg" alt="Placeholder Image"style="width:50%; height:50%;"></div>
+					<p>我的名字是<u>林泓佐</u>，個性外向開朗，樂觀向上，對待生活充滿熱情和積極態度。我的優點是樂觀、勇敢、有創意和領導才能，缺點是有時候缺乏耐心和細心的處理事情。我的個人特質是喜歡學習新事物、開拓新領域，並能夠迅速適應環境和挑戰。我對音樂、文學和藝術有濃厚的興趣，並熱愛旅行和探索不同的文化和風景。</p>
+				</div>
+			</section>
+			<section>
+				<div class="wave">
+					<h1 class="ml2">相信自己，勇往直前</h1>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+					<!--文字波浪動畫-->
+					<script>
+						var textWrapper = document.querySelector('.ml2');
+						textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+				  
+						anime.timeline({loop: true})
+						  .add({
+							targets: '.ml2 .letter',
+							scale: [4,1],
+							opacity: [0,1],
+							translateZ: 0,
+							easing: "easeOutExpo",
+							duration: 950,
+							delay: (el, i) => 70*i
+						  }).add({
+							targets: '.ml2',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 2000
+						  });
+					  </script>
+				</div>
+				<p>這句話代表了我的個人信念和人生態度。我相信只要我們相信自己，充滿勇氣和決心，就能夠不斷挑戰自己，開拓新領域，並取得成功。</p>
+			</section>
+			<section id="b">
+				<h2>個人專業與技能</h2>
+				<div class="skill">
+					<i class="skill-icon fa fa-laptop"></i>
+					<div class="skill-name">程式技能</div>
+					<div class="skill-description">熟悉 HTML、CSS、JavaScript、Python 等程式語言，並且具備基礎的資料庫操作能力。</div>
+				</div>
+				<div class="skill">
+					<i class="skill-icon fa fa-support"></i>
+					<div class="skill-name">球類運動</div>
+					<div class="skill-description">擅長籃球、排球、羽球等球類運動，曾參加校隊。</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="skill">
+					<i class="skill-icon fa fa-music"></i>
+					<div class="skill-name">鋼琴演奏</div>
+					<div class="skill-description">自學鋼琴多年，能夠彈奏多首流行歌曲和古典樂曲。</div>
+				</div>			</section>
+				<section id="experiences">
+					<h2>個人經歷</h2>
+					<div class="experience">
+					  <img src="image\2.jpg" alt="課程圖片">
+					  <div class="description">
+						<h3>大學課程</h3>
+						<h4>資訊管理學系</h4>
+						<p>2021 - 2023</p>
+						<p>在學期間修習了資料庫系統、網頁設計、程式設計、行動應用程式等相關課程。</p>
+					  </div>
+					</div>
+					<div class="experience">
+					  <img src="image\1.jpg" alt="運動圖片">
+					  <div class="description">
+						<h3>運動活動</h3>
+						<h4>各種球類運動</h4>
+						<p>2010 - 至今</p>
+						<p>從小就對運動有熱情，參加過學校籃球、足球、排球、羽球等社團活動，也喜歡到戶外場地打球。</p>
+					  </div>
+					</div>
+					<div class="experience">
+					  <img src="image\3.jpg" alt="鋼琴圖片" >
+					  <div class="description">
+						<h3>音樂活動</h3>
+						<h4>彈鋼琴</h4>
+						<p>2005 - 至今</p>
+						<p>自幼學習鋼琴，曾參加校內音樂比賽並獲得佳績。喜歡彈奏古典音樂，也喜歡嘗試彈奏流行歌曲。</p>
+					  </div>
+					</div>
+				  </section>
+				  
+			<section id="d">
+				<h2>聯絡資訊</h2>
+				<ul class="contact">
+					<li><a href="mailto:joe29944687@gmai.com"><i class="fa fa-envelope"></i> Email</a></li>	
+					<li><a href="tel:0906229699"><i class="fa fa-phone"></i> Phone</a></li>				
+					<li><a href="https://www.instagram.com/joe0213_/"><i class="fa fa-instagram"></i> instagram</a></li>		
+					</ul>
+			</section>
+		</main>
+		<footer>
+			<p>幫我加分拜託<i class="fa fa-dollar"></i></p>
+		</footer>
+	</body>
+</html>
+

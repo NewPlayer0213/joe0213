@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    padding-top: 100px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+section .content p {
+    flex: 0.5;
+    max-width: 500px;
+    margin: 0em;
+}
+
+
+
+img {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 75% 50%, 25% 50%, 0% 25%);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: orange;
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+h1 {
+    margin: 2rem;
+}
+
+footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+@media screen and (max-width: 900px) {
+    section .content {
+        flex-direction: column;
+    }
+
+    section .content p,
+    section .content img {
+        max-width: 100%;
+        margin: 0.5em 0;
+    }
+}
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.skill-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skill-description {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #777;
+}
+
+#experiences {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+#experiences h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.experience img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.experience .description {
+    flex: 1;
+}
+
+.experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.experience p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
